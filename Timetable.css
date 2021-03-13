@@ -1,0 +1,240 @@
+body {
+  background-color: cadetblue;
+}
+td {
+  border: 0.5mm solid coral;
+}
+th {
+  border: 0.5mm solid brown;
+}
+.heading {
+  background-color: darkgoldenrod;
+}
+.time {
+  background-color: gold;
+}
+#ee211 .link {
+  background-color: chocolate;
+}
+
+/* Clock code */
+
+#clock {
+  /*  background repeats itself so no repeat, vw is view width. i.e like size of your screen, background size 100% means 100% of its container
+        but it would be 100% considering the lower , width or height and image aspect ration would remain same so it might not perfectly fit container */
+
+  border: 2px solid brown;
+  background-color: red;
+  width: 20vw;
+  height: 20vw;
+  background: url(clock.png) no-repeat;
+  background-size: 100%;
+  position: relative;
+}
+.clockhands {
+  background-color: green;
+
+  position: absolute;
+  transform-origin: bottom;
+}
+#hour {
+  width: 2%;
+  height: 29%;
+  top: 21%;
+  left: 48.5%;
+  /* visibility: hidden; */
+  transform: rotateZ(25deg);
+}
+#minute {
+  width: 1.5%;
+  height: 42%;
+  /* visibility: hidden; */
+  background-color: blue;
+  top: 9%;
+  left: 47.6%;
+}
+#second {
+  background-color: red;
+  width: 1.4%;
+  height: 53%;
+  top: -2%;
+  left: 47.9%;
+  /* visibility: hidden; */
+}
+
+.drag {
+  border: 1px solid black;
+  width: 10%;
+  float: right;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+#Bar {
+  background-color: brown;
+  border: 1px solid black;
+  height: 20px;
+  width: 100%;
+  position: relative;
+}
+
+#navbar {
+  background-color: white;
+}
+
+.Z,
+.D,
+.E,
+.F,
+.G,
+.H,
+.I,
+.J,
+.K,
+.L,
+.M {
+  /* Row divisions */
+
+  height: 7%;
+  width: 100%;
+  border: 1px solid black;
+
+  position: static;
+  display: flex;
+  flex-direction: row;
+}
+/* for upper rows*/
+.A,
+.B,
+.C {
+  height: 7%;
+  
+  width: 100%;
+  border: 1px solid black;
+
+  position: sticky;
+  display: flex;
+  flex-direction: row;
+}
+
+.z,
+.a,
+.b,
+.c,
+.d,
+.e,
+.f,
+.g,
+.h,
+.i,
+.j,
+.k,
+.l,
+.m {
+  /* each cell in a row */
+  height: 95%;
+  width: 10%;
+  background-color: green;
+  float: right;
+  margin: 0.5%;
+  word-wrap: break-word;
+}
+#table {
+  /* entire table box */
+  display: flex;
+  height: 95vh;
+  width: 95vw;
+  flex-direction: column;
+  background-color: aqua;
+  z-index: 5000;
+}
+
+button {
+  height: 10%;
+  width: 40%;
+  float: right;
+}
+.moreinfo {
+  top: -200px;
+  background-color: cornsilk;
+  visibility: hidden;
+  position: relative;
+  float: left;
+  left: 100%;
+  height: 200px;
+  width: 300px;
+  overflow: scroll;
+  z-index: 6000;
+  padding: 2px;
+}
+
+/* navigation bar css added by amna tarar*/
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: rgb(248, 244, 244);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #999494;
+  display: block;
+  transition: 0.3s;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+}
+
+.sidenav a:hover {
+  color: #0c0b0b;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+#open {
+  right: 0;
+  float: right;
+}

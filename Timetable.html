@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="Timetable.css">
+   
+    <script type="text/javascript" src="Timetable.js" defer></script>
+    <script src="./localbase.dev.js"></script>
+
+
+
+    
+    <!-- Jquery files with  -->
+    <script src="jquery.min.js"></script>
+    <script src="jquery-ui.min.js" > </script>
+        
+      
+
+    <title>Calender</title>
+</head>
+
+<body>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">COLLEGE</a>
+    <hr>
+    <a href="#">BRANCH</a>
+    <hr>
+    <a href="#">YEAR</a>
+    <hr>
+    <a href="#">CONTACT</a>
+    <hr>
+  </div>
+  <span id="open" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; CUSTOMIZE</span>
+ 
+    
+    
+
+
+
+    <h3 title="This is current time" onclick="time()"> Current time is : <span id="time"></span></h3>
+
+    <!-- This it the Community Bar -->
+     <div class="drag" id="combox" title="Navigate between communities" >
+        
+        <div id="Bar" class="tooltip">
+            
+            <span class="tooltiptext">Drag Nav Bar</span>
+        </div>
+        <div  class="slidingitem" id="navbar">
+            Hi in this menu you can choose your community
+            <select class="options" name="community" id="com">
+                <option value="">IIT GOA GENRAL</option>
+                <option value="">2019 Batch</option>
+                <option value="">2018 Batch</option>
+                <option value="">2017 Bacth</option>
+                <option value="">CSE </option>
+            </select>
+        </div>
+    </div>  
+
+
+
+
+    <div id="menu">
+
+    </div>
+    <div id="table">
+        
+        <div class="Z"><div class="z"> COURSES</div><div class="a">MONDAY</div>    <div class="b">TUESDAY</div>    <div class="c">WEDNESDAY</div> <div class="d">THURSDAY</div> <div class="e">FRIDAY</div> <div class="f">SATURDAY</div> <div class="g">SUNDAY</div></div>
+        <div  class="A"><div class="z"></div><div class="a"></div>    <div class="b"></div>    <div class="c"></div> <div class="d"></div> <div class="e"></div> <div class="f"></div> <div class="g"></div></div>
+        <div class="B"><div class="z"></div><div class="a"></div>    <div class="b"></div>    <div class="c"></div> <div class="d"></div> <div class="e"></div> <div class="f"></div> <div class="g"></div></div>
+        <div class="C"><div class="z"></div><div class="a"></div>    <div class="b"></div>    <div class="c"></div> <div class="d"></div> <div class="e"></div> <div class="f"></div> <div class="g"></div></div>
+        <div class="D"><div class="z"></div><div class="a"></div>    <div class="b"></div>    <div class="c"></div> <div class="d"></div> <div class="e"></div> <div class="f"></div> <div class="g"></div></div>
+        <div class="E"><div class="z"></div><div class="a"></div>    <div class="b"></div>    <div class="c"></div> <div class="d"></div> <div class="e"></div> <div class="f"></div> <div class="g"></div></div>
+        <div class="F"><div class="z"></div><div class="a"></div>    <div class="b"></div>    <div class="c"></div> <div class="d"></div> <div class="e"></div> <div class="f"></div> <div class="g"></div></div>
+        <div class="G"><div class="z"></div><div class="a"></div>    <div class="b"></div>    <div class="c"></div> <div class="d"></div> <div class="e"></div> <div class="f"></div> <div class="g"></div></div>
+        <div class="H"><div class="z"></div><div class="a"></div>    <div class="b"></div>    <div class="c"></div> <div class="d"></div> <div class="e"></div> <div class="f"></div> <div class="g"></div></div>
+        <div class="I"><div class="z"></div><div class="a"></div>    <div class="b"></div>    <div class="c"></div> <div class="d"></div> <div class="e"></div> <div class="f"></div> <div class="g"></div></div>
+        <div class="J"><div class="z"></div><div class="a"></div>    <div class="b"></div>    <div class="c"></div> <div class="d"></div> <div class="e"></div> <div class="f"></div> <div class="g"></div></div>
+        <div class="K"><div class="z"></div><div class="a"></div>    <div class="b"></div>    <div class="c"></div> <div class="d"></div> <div class="e"></div> <div class="f"></div> <div class="g"></div></div>
+        <div class="L"><div class="z"></div><div class="a"></div>    <div class="b"></div>    <div class="c"></div> <div class="d"></div> <div class="e"></div> <div class="f"></div> <div class="g">bye</div></div>
+    </div>
+
+  
+    <!-- <div id="clock">
+        <div id="hour" class="clockhands"></div>
+        <div id="minute" class="clockhands"></div>
+        <div id="second" class="clockhands"></div>
+    </div> -->
+
+
+</body>
+
+</html>
